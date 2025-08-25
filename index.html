@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virendra - MERN Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Virendra's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, my name is <span class="purple">Virendra</span>
+          <div>and I am a</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a
+              href="https://drive.google.com/file/d/1ISi_oVRwPuB9VS60F-oDfvZtLmyyDLeA/view?usp=sharing"
+              class="btn"
+              >View Resume</a
+            >
+            <a href="https://github.com/virendra-pal" class="btn"
+              >Visit Github</a
+            >
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="png.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Projects</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="sppedo.png" alt="" />
+            <div class="vertical-title">Sppedo: A food delivery app</div>
+            <div class="vertical-desc">
+              <ul>
+                <li>
+                  Engineered a full-stack food delivery platform using MERN
+                  Stack (MongoDB, Express.js, React.js, Node.js) enabling users
+                  to browse menus, place orders, and track deliveries.
+                </li>
+                <li>
+                  Implemented secure JWT-based authentication, secure API
+                  endpoints, and role-based access control for customers and
+                  restaurant admins.
+                </li>
+                <li>
+                  Integrated Razorpay Payment Gateway for seamless online
+                  payments and order confirmations.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="chatbot.png" alt="" />
+            <div class="vertical-title">AI Chatbot</div>
+            <div class="vertical-desc">
+              <ul>
+                <li>
+                  Built an AI-powered chatbot capable of real-time,
+                  context-aware conversations using Natural Language Processing.
+                </li>
+                <li>
+                  Integrated external APIs and knowledge bases to enhance
+                  chatbot accuracy and provide dynamic, real-time information
+                  retrieval.
+                </li>
+                <li>
+                  Deployed the chatbot on a web interface with user
+                  authentication and session management, ensuring scalability
+                  and seamless user experience.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="fashionStudio.png" alt="" />
+            <div class="vertical-title">Fashion Studio</div>
+            <div class="vertical-desc">
+              <ul>
+                <li>
+                  Developed a responsive online shopping site with dynamic
+                  product listings, interactive cart, and seamless user
+                  experience.
+                </li>
+                <li>
+                  Implemented secure payment gateway integration and order
+                  management system to handle end-to-end transactions.
+                </li>
+                <li>
+                  Optimized site performance with efficient database queries and
+                  responsive design for cross-device compatibility.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="leetmatric.png" alt="" />
+            <div class="vertical-title">LeetMatric</div>
+            <div class="vertical-desc">
+              <ul>
+                <li>
+                  Used LeetMatric to search, filter, and analyze the number of
+                  LeetCode questions by tags, difficulty, and company-specific
+                  patterns for structured DSA preparation.
+                </li>
+                <li>
+                  Tracked progress across problem categories to identify weak
+                  areas and systematically improve problem-solving skills.
+                </li>
+                <li>
+                  Leveraged data insights from LeetMatric to design a targeted
+                  study plan aligned with coding interview requirements.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Virendra Kumar Pal</h3>
+        <p>Frontend Developer | MERN Stack Enthusiast</p>
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/virendra-pal" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/virendra-kumar-pal-b5438b296" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="mailto:virendrakumarp04@gmail.com">Email</a></li>
+        </ul>
+        <p class="copyright">© 2025 Virendra Pal. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Frontend Developer",
+        "Backend Developer",
+        "Mern Stack developer",
+      ],
+      typeSpeed: 50,
+    });
+  </script>
+</html>
