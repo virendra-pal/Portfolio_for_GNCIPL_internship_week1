@@ -12,17 +12,18 @@
         <div class="left">Virendra's Portfolio</div>
         <div class="right">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact Me</a></li>
+            <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#" class="nav-link" data-section="services">Services</a></li>
+            <li><a href="#" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#" class="nav-link" data-section="contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
+
     <main>
-      <section class="firstSection">
+      <section class="secondSection content-section active" id="home">
         <div class="leftSection">
           Hi, my name is <span class="purple">Virendra</span>
           <div>and I am a</div>
@@ -39,16 +40,62 @@
           </div>
         </div>
         <div class="rightSection">
-          <img src="png.png" alt="" />
+          <img src="png.png" alt="Placeholder Image" />
         </div>
       </section>
-      <hr />
-      <section class="secondSection">
+      <section class="secondSection content-section" id="about">
+        <span class="text-gray">Who I am</span>
+        <h1>About Me</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="vertical-title">Introduction</div>
+            <div class="vertical-desc">
+              I am a passionate and dedicated MERN stack developer with a strong focus on creating dynamic and responsive web applications. I have hands-on experience in building full-stack solutions, from designing robust backend APIs with Node.js and Express.js to crafting intuitive user interfaces with React.js. My goal is to leverage my skills to build impactful and scalable software solutions.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">Skills</div>
+            <div class="vertical-desc">
+              <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</li>
+                <li><strong>Backend:</strong> Node.js, Express.js</li>
+                <li><strong>Database:</strong> MongoDB</li>
+                <li><strong>Tools & Technologies:</strong> Git, GitHub, REST APIs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="secondSection content-section" id="services">
+        <span class="text-gray">What I offer</span>
+        <h1>Services</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="vertical-title">Web Development</div>
+            <div class="vertical-desc">
+              I specialize in creating modern, fast, and responsive websites from scratch. Whether you need a simple landing page or a complex web application, I can deliver a high-quality solution tailored to your needs.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">API Development</div>
+            <div class="vertical-desc">
+              I can design and build secure and scalable RESTful APIs using Node.js and Express.js, providing the backbone for your web and mobile applications.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">MERN Stack Solutions</div>
+            <div class="vertical-desc">
+              From concept to deployment, I can build complete full-stack applications using the MERN stack. This includes database design, server-side logic, and client-side implementation.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="secondSection content-section" id="projects">
         <span class="text-gray">What I have done so far</span>
         <h1>Projects</h1>
         <div class="box">
           <div class="vertical">
-            <img class="image-top" src="sppedo.png" alt="" />
+            <img class="image-top" src="sppedo.png" alt="Sppedo" />
             <div class="vertical-title">Sppedo: A food delivery app</div>
             <div class="vertical-desc">
               <ul>
@@ -70,7 +117,7 @@
             </div>
           </div>
           <div class="vertical">
-            <img class="image-top" src="chatbot.png" alt="" />
+            <img class="image-top" src="chatbot.png" alt="AI Chatbot" />
             <div class="vertical-title">AI Chatbot</div>
             <div class="vertical-desc">
               <ul>
@@ -92,7 +139,7 @@
             </div>
           </div>
           <div class="vertical">
-            <img class="image-top" src="fashionStudio.png" alt="" />
+            <img class="image-top" src="fashionStudio.png" alt="Fashion Studio" />
             <div class="vertical-title">Fashion Studio</div>
             <div class="vertical-desc">
               <ul>
@@ -113,7 +160,7 @@
             </div>
           </div>
           <div class="vertical">
-            <img class="image-top" src="leetmatric.png" alt="" />
+            <img class="image-top" src="leetmatric.png" alt="LeetMatric" />
             <div class="vertical-title">LeetMatric</div>
             <div class="vertical-desc">
               <ul>
@@ -135,6 +182,30 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact Me Section -->
+      <section class="secondSection content-section" id="contact">
+        <span class="text-gray">Get in touch</span>
+        <h1>Contact Me</h1>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <h2>Send me a message</h2>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-content">
@@ -154,16 +225,7 @@
         <p class="copyright">© 2025 Virendra Pal. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
   </body>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed("#element", {
-      strings: [
-        "Frontend Developer",
-        "Backend Developer",
-        "Mern Stack developer",
-      ],
-      typeSpeed: 50,
-    });
-  </script>
 </html>
